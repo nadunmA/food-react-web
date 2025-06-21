@@ -23,6 +23,7 @@
  transition: all 0.3s ease-in-out;
  user-select: none;
  font-size: 13px;
+ margin-right: 565px;
 }
 
 .fancy::before {
@@ -104,4 +105,10 @@
  .fancy:hover .bottom-key-2 {
  right: 0;
  width: 0;
+}
+
+@layer utilities {
+    .shadow-1 {
+        @apply drop-shadow-[-15px_15px_15px_rgba(0,0,0,0.5)];
+    }
 }
