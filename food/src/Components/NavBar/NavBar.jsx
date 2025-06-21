@@ -1,5 +1,6 @@
 import React from "react";
-import Logo from "../../assets/Logo.png";
+import Logo from "../../assets/llogo.png";
+
 import { FaBars } from "react-icons/fa";
 
 const Menu = [
@@ -45,14 +46,14 @@ const NavBar = () => {
 
   return (
     <>
-      <div className="bg-green-500">
+      <div className="bg-white">
         <div className="container py-2">
           <div className="flex justify-between">
             {/* Logo section */}
 
             <div>
               <a href="# ">
-                <img src={Logo} alt="logo" className="w-23" />
+                <img src={Logo} alt="logo" className="w-23 ml-5" />
               </a>
             </div>
 
