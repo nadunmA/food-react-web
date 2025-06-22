@@ -1,5 +1,13 @@
 @import "tailwindcss";
 
+/* In your CSS file */
+.container {
+  display: flex;
+  flex-direction: column;  /* Or row, depending on layout */
+  gap: 1rem;
+}
+
+
 /* From Uiverse.io by cssbuttons-io */ 
 .fancy {
  background-color: transparent;
@@ -9,7 +17,6 @@
  color: #fff;
  cursor: pointer;
  display: inline-block;
- float: right;
  font-weight: 700;
  letter-spacing: 0.05em;
  margin: 0;
@@ -23,7 +30,9 @@
  transition: all 0.3s ease-in-out;
  user-select: none;
  font-size: 13px;
- margin-right: 565px;
+ font-size: 12px;
+ padding: 1em 1.5em;
+ margin-left: 10px;
 }
 
 .fancy::before {
@@ -107,6 +116,11 @@
  width: 0;
 }
 
+@media (max-width: 768px) {
+  .button-wrapper {
+    justify-content: center;
+  }
+}
 @layer utilities {
     .shadow-1 {
         @apply drop-shadow-[-15px_15px_15px_rgba(0,0,0,0.5)];
