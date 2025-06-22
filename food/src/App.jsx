@@ -5,6 +5,7 @@ import './App.css'
 import NavBar from './Components/NavBar/NavBar'
 import Hero from './Components/Hero/Hero'
 import Abanner from './Components/AboutBanner/Abanner'
+import OurMenu from './Components/OurMenu/OurMenu'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -15,6 +16,7 @@ function App() {
       <NavBar />
       <Hero />
       <Abanner />
+      <OurMenu />
       
     </main>
   )

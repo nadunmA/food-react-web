@@ -18,8 +18,8 @@ const Abanner = () => {
           {/*Text section*/}
 
           <div className="flex flex-col justify-center gap-3 sm:pt-0">
-            <p className="uppercase text-4xl font-bold text-dark">About</p>
-            <h1 className="text-4xl text-grren-600 font-semibold font-cursive text-green-600">
+            <p className="text-4xl font-bold text-dark">About</p>
+            <h1 className="text-3xl text-grren-600 font-semibold font-cursive text-green-600">
               Fresh Food
             </h1>
             <p className="font-sans leading-6 text-gray-700 text-[15px] md:text-base">
