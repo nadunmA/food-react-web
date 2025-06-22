@@ -36,6 +36,13 @@ const MenuData = [
 
 const OurMenu = () => {
   const settings = {
+    dots: true,
+    arrow: false,
+    infinite: true,
+    speed: 600,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
     cssEase: "linear",
     pauseOnHover: true,
     pauseOnFocus: true,
