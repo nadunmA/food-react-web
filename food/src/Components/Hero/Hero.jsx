@@ -3,7 +3,7 @@ import HeroJpeg from "./../../assets/hFood.png";
 
 const Hero = () => {
   return (
-    <div className="min-h-[550px] sm:min-h-[600px] bg-green-600 flex justify-center items-center">
+    <div className="shadow-1 min-h-[550px] sm:min-h-[600px] bg-green-600 flex justify-center items-center">
       <div className="container pb-8 sm:pb-0">
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
           {/*text content section*/}

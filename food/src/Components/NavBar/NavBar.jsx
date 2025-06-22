@@ -58,7 +58,7 @@ const NavBar = () => {
             </div>
 
             {/* Link section */}
-            <div className="hidden lg:flex justify-between items-center gap-4">
+            <div className="hidden lg:flex justify-between items-center gap-4 shadow-1">
               <ul className="hidden lg:flex justify-between items-center gap-4">
                 {Menu.map((menu) => (
                   <li key={menu.id}>
@@ -78,11 +78,11 @@ const NavBar = () => {
               {/*DropDown menu*/}
               {open && <div>
                 
-                <ul className="bg-white space-y-3 p-4 rounded-md shadow-md absolute right-43 top-24 z-50">
+                <ul className="bg-white space-y-3 p-4 rounded-md shadow-md absolute right-43 top-24 z-50 shadow-1">
                   {Menu.map((menu) => (
                     <li key={menu.id}>
 
-                      <a href={menu.link} className="inline-block text-xl p-4 hover:bg-green-500 rounded-md hover:text-white w-full">
+                      <a href={menu.link} className="shadow-1 inline-block text-xl p-4 hover:bg-green-500 rounded-md hover:text-white w-full">
                         {menu.name}
                       </a>
 
