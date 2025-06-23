@@ -7,6 +7,7 @@ import Hero from "./Components/Hero/Hero";
 import Abanner from "./Components/AboutBanner/Abanner";
 import OurMenu from "./Components/OurMenu/OurMenu";
 import FeedBack from "./Components/Feedbacks/FeedBack";
+import NewsLetter from "./Components/NewsLetter/NewsLetter";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -18,6 +19,7 @@ function App() {
       <Abanner />
       <OurMenu />
       <FeedBack />
+      <NewsLetter />
     </main>
   );
 }
