@@ -80,13 +80,16 @@ const FeedBack = () => {
       <div className="container mx-auto px-4">
         {/* Header section */}
         <div className="mb-10">
-          <h1 className="text-center text-4xl font-bold text-green-600">
+          <h1
+            data-aos="fade-up"
+            className="text-center text-4xl font-bold text-green-600"
+          >
             Feedbacks
           </h1>
         </div>
 
         {/* Slider section */}
-        <div className="relative overflow-hidden shadow-1">
+        <div data-aos="zoom-in" className="relative overflow-hidden shadow-1">
           <div
             className="flex transition-transform duration-500 ease-in-out"
             style={{

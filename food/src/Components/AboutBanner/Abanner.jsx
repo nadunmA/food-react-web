@@ -7,7 +7,7 @@ const Abanner = () => {
       <div className="container">
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
           {/*Image section*/}
-          <div className="flex justify-center items-center">
+          <div data-aos="zoom-in" className="flex justify-center items-center">
             <img
               src={Banner}
               alt="About logo"
@@ -18,11 +18,21 @@ const Abanner = () => {
           {/*Text section*/}
 
           <div className="flex flex-col justify-center gap-3 sm:pt-0">
-            <p className="text-4xl font-bold text-dark">About</p>
-            <h1 className="text-3xl text-grren-600 font-semibold font-cursive text-green-600">
+            <p data-aos="fade-up" className="text-4xl font-bold text-dark">
+              About
+            </p>
+            <h1
+              data-aos="fade-up"
+              data-aos-delay="200"
+              className="text-3xl text-grren-600 font-semibold font-cursive text-green-600"
+            >
               Fresh Food
             </h1>
-            <p className="font-sans leading-6 text-gray-700 text-[15px] md:text-base">
+            <p
+              data-aos="fade-up"
+              data-aos-delay="200"
+              className="font-sans leading-6 text-gray-700 text-[15px] md:text-base"
+            >
               Lorem ipsum dolor sit amet consectetur adipisicing elit. nulla eos
               dignissimos
               <br />
@@ -46,7 +56,7 @@ const Abanner = () => {
             </p>
 
             {/* Button part now inside text section */}
-            <div>
+            <div data-aos="fade-up" data-aos-delay="200">
               <a className="btn" href="#">
                 <span className="top-key"></span>
                 <span className="text">View Menu</span>

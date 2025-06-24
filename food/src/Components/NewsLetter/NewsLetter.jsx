@@ -22,7 +22,11 @@ const NewsLetter = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12 lg:py-16 relative z-10 mt-18">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-16">
           {/* Text Section */}
-          <div className="flex-1 space-y-4 text-left animate-fade-in max-w-xl">
+          <div
+            data-aos="fade-up"
+            data-aos-delay="400"
+            className="flex-1 space-y-4 text-left animate-fade-in max-w-xl"
+          >
             <h1 className="text-4xl sm:text-5xl lg:text-4xl font-bold text-white leading-tight drop-shadow-lg">
               Ready to Get Started
             </h1>
@@ -32,7 +36,11 @@ const NewsLetter = () => {
           </div>
 
           {/* Input Section */}
-          <div className="flex-shrink-0 w-full max-w-md lg:max-w-lg">
+          <div
+            data-aos="fade-up"
+            data-aos-delay="400"
+            className="flex-shrink-0 w-full max-w-md lg:max-w-lg"
+          >
             <div className="flex flex-col sm:flex-row gap-2 sm:gap-0">
               <input
                 type="email"
@@ -53,7 +61,11 @@ const NewsLetter = () => {
             </div>
 
             {/* Privacy text */}
-            <p className="text-xs text-white/70 mt-3 text-center sm:text-left font-light">
+            <p
+              data-aos="fade-up"
+              data-aos-delay="200"
+              className="text-xs text-white/70 mt-3 text-center sm:text-left font-light"
+            >
               🔒 We respect your privacy. Unsubscribe at any time.
             </p>
           </div>

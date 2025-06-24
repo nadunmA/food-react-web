@@ -16,14 +16,26 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 text-center md:text-left">
           {/* Logo & Description */}
           <div>
-            <div className="flex justify-center md:justify-start mb-5">
+            <div
+              data-aos="zoom-in"
+              data-aos-delay="400"
+              className="flex justify-center md:justify-start mb-5"
+            >
               <img src={Logo} alt="Company Logo" className="w-36" />
             </div>
-            <p className="text-gray-600 leading-relaxed mb-6">
+            <p
+              data-aos="fade-up"
+              data-aos-delay="400"
+              className="text-gray-600 leading-relaxed mb-6"
+            >
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Consequuntur molestiae voluptatum.
             </p>
-            <div className="flex justify-center md:justify-start">
+            <div
+              data-aos="fade-up"
+              data-aos-delay="200"
+              className="flex justify-center md:justify-start"
+            >
               <button class="animated-button">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -46,7 +58,7 @@ const Footer = () => {
           </div>
 
           {/* Quick Links */}
-          <div>
+          <div data-aos="zoom-in" data-aos-delay="200">
             <h2 className="text-xl font-semibold text-gray-800 mb-5">
               Quick Links
             </h2>
@@ -65,7 +77,7 @@ const Footer = () => {
           </div>
 
           {/* Contact & Social */}
-          <div>
+          <div data-aos="zoom-in" data-aos-delay="200">
             <h2 className="text-xl font-semibold text-gray-800 mb-5">
               Contact Us
             </h2>
@@ -91,7 +103,11 @@ const Footer = () => {
       </div>
 
       {/* Bottom Bar */}
-      <div className="bg-gray-100 py-4">
+      <div
+        data-aos="zoom-out"
+        data-aos-delay="200"
+        className="bg-gray-100 py-4"
+      >
         <div className="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between text-sm text-gray-600">
           <p className="mb-2 md:mb-0">© 2025 All rights reserved Inc.</p>
           <div className="flex space-x-6">

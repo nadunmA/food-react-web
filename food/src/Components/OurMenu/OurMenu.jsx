@@ -78,10 +78,17 @@ const OurMenu = () => {
       <div className="container mx-auto px-4">
         {/*Header section*/}
         <div className="mb-10 space-y-5">
-          <h1 className="text-center text-4xl font-bold text-black">
+          <h1
+            data-aos="fade-up"
+            className="text-center text-4xl font-bold text-black"
+          >
             Our Menu
           </h1>
-          <div className="text-center sm:max-w-sm mx-auto text-xs opacity-75 text-black">
+          <div
+            data-aos="fade-up"
+            data-aos-delay="200"
+            className="text-center sm:max-w-sm mx-auto text-xs opacity-75 text-black"
+          >
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi
             <br />
             quaerat tempore unde. Saepe, et ad velit sed veniam, at error
@@ -89,39 +96,41 @@ const OurMenu = () => {
         </div>
 
         {/*Slider section*/}
-        <Slider {...settings}>
-          {MenuData.map((menu) => (
-            <div key={menu.id} className="my-16">
-              <div className="flex flex-col gap-4 py-8 px-6 mx-4 rounded-xl bg-black shadow-xl">
-                {/*image section */}
-                <div className="mb-3 flex justify-center">
-                  <img
-                    src={menu.img}
-                    alt={menu.id}
-                    className="rounded-full w-48 h-48 object-cover shadow-lg"
-                  />
-                </div>
-                {/*text content section */}
-                <div className="text-center">
-                  <h3 className="text-xl font-semibold mb-2 text-white">
-                    {menu.name}
-                  </h3>
-                  <p className="text-lg font-bold text-green-600">
-                    {menu.price}
-                    {/*Button part*/}
+        <div data-aos="zoom-in" data-aos-delay="200">
+          <Slider {...settings}>
+            {MenuData.map((menu) => (
+              <div key={menu.id} className="my-16">
+                <div className="flex flex-col gap-4 py-8 px-6 mx-4 rounded-xl bg-black shadow-xl">
+                  {/*image section */}
+                  <div className="mb-3 flex justify-center">
+                    <img
+                      src={menu.img}
+                      alt={menu.id}
+                      className="rounded-full w-48 h-48 object-cover shadow-lg"
+                    />
+                  </div>
+                  {/*text content section */}
+                  <div className="text-center">
+                    <h3 className="text-xl font-semibold mb-2 text-white">
+                      {menu.name}
+                    </h3>
+                    <p className="text-lg font-bold text-green-600">
+                      {menu.price}
+                      {/*Button part*/}
 
-                    <div>
-                      <button class="btnn">
-                        <i class="animation"></i>Buy Now
-                        <i class="animation"></i>
-                      </button>
-                    </div>
-                  </p>
+                      <div>
+                        <button class="btnn">
+                          <i class="animation"></i>Buy Now
+                          <i class="animation"></i>
+                        </button>
+                      </div>
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
-        </Slider>
+            ))}
+          </Slider>
+        </div>
       </div>
     </div>
   );

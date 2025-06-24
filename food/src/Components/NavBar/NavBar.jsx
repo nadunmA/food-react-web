@@ -74,14 +74,18 @@ const NavBar = () => {
         <div className="container py-2">
           <div className="flex justify-between">
             {/* Logo section */}
-            <div>
+            <div data-aos="fade-down" data-aos-once="true" data-aos-delay="300">
               <a href="#">
                 <img src={Logo} alt="logo" className="w-23 ml-5" />
               </a>
             </div>
 
             {/* Button section */}
-            <div className="hidden lg:flex justify-between items-center gap-4">
+            <div
+              data-aos="fade-down"
+              data-aos-once="true"
+              className="hidden lg:flex justify-between items-center gap-4"
+            >
               <ul className="hidden lg:flex justify-between items-center gap-4">
                 {Menu.map((menu) => (
                   <li key={menu.id}>

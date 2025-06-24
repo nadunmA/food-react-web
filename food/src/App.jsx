@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState, useEffect } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
@@ -9,12 +9,24 @@ import OurMenu from "./Components/OurMenu/OurMenu";
 import FeedBack from "./Components/Feedbacks/FeedBack";
 import NewsLetter from "./Components/NewsLetter/NewsLetter";
 import Footer from "./Components/Footer/Footer";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function App() {
   const [count, setCount] = useState(0);
 
+  useEffect(() => {
+    AOS.init({
+      offset: 100,
+      duration: 700,
+      easing: "ease-in",
+      delay: 100,
+    });
+    AOS.refresh();
+  }, []);
+
   return (
-    <main>
+    <main className="overflow-x-hidden">
       <NavBar />
       <Hero />
       <Abanner />

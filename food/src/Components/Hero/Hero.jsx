@@ -13,13 +13,19 @@ const Hero = () => {
               Try <br />
               Now
             </h1>
-            <p className="text-sm text-black font-sans ml-2.5">
-              Lorem ipsum dolor sit amet consecteturvddf, adipisicing elit. Maiores Maiores
-              odio nemo veritatis eveniet quas ut dolorum provident
+            <p
+              data-aos="fade"
+              data-aos-once="true"
+              data-aos-delay="300"
+              className="text-sm text-black font-sans ml-2.5"
+            >
+              Lorem ipsum dolor sit amet consecteturvddf, adipisicing elit.
+              Maiores Maiores odio nemo veritatis eveniet quas ut dolorum
+              provident
               <br />
               dignissimos saepe molestias.
             </p>
-            <div>
+            <div data-aos="fade-up" data-aos-delay="400" data-aos-offset="0">
               <a className="fancy" href="#">
                 <span className="top-key"></span>
                 <span className="text">View Menu</span>
@@ -30,7 +36,11 @@ const Hero = () => {
           </div>
 
           {/*image section*/}
-          <div className="min-h[450px] flex justify-center items-center relative order-1 sm:order-2">
+          <div
+            data-aos="zoom-in"
+            data-aos-duration="500"
+            className="min-h[450px] flex justify-center items-center relative order-1 sm:order-2"
+          >
             <img
               src={HeroJpeg}
               alt="Hero img"
