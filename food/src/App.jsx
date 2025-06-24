@@ -8,6 +8,7 @@ import Abanner from "./Components/AboutBanner/Abanner";
 import OurMenu from "./Components/OurMenu/OurMenu";
 import FeedBack from "./Components/Feedbacks/FeedBack";
 import NewsLetter from "./Components/NewsLetter/NewsLetter";
+import Footer from "./Components/Footer/Footer";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -20,6 +21,7 @@ function App() {
       <OurMenu />
       <FeedBack />
       <NewsLetter />
+      <Footer />
     </main>
   );
 }
